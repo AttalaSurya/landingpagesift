@@ -1,0 +1,7 @@
+<?php
+    $obeelektro="https://si.ft.uns.ac.id/obeelektro/";
+    $obesipil="https://si.ft.uns.ac.id/obesipil/";
+    $obemesin="https://si.ft.uns.ac.id/obemesin/";
+    $obekimia="https://si.ft.uns.ac.id/obekimia/";
+    $obeindustri="https://si.ft.uns.ac.id/obeindustri/";
+?>
