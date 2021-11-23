@@ -16,6 +16,7 @@
         <link href="css/styles.css" rel="stylesheet">
         <link href="css/ldsift.css" rel="stylesheet">
         <link href="css/ani.css" rel="stylesheet">
+        <link href="css/media.css" rel="stylesheet">
     </head>
         <body id="page-top">
             <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
@@ -171,7 +172,7 @@
                             <div class="col-md-6 col-lg-4 mb-5">
                                 <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
                                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                        <div class="portfolio-item-caption-content text-center text-white"><h4>Build Energy Management System</h4></div>
+                                        <div class="portfolio-item-caption-content text-center text-black"><h4>Build Energy Management System</h4></div>
                                     </div><img class="img-fluid" src="assets/img/Portfolio/T_Elektro.png" width="200" height="200" alt="Build Energy Management System"/>
                                 </div>
                             </div>
