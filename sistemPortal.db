@@ -1,3 +1,1 @@
-<?php
-
-?>
+<?php $portalelektro="https://si.ft.uns.ac.id/portalelektro/"; $portalarsitektur="https://si.ft.uns.ac.id/portalarsitektur/"; $portalmesin="https://si.ft.uns.ac.id/portalmesin/"; $portalpwk="https://si.ft.uns.ac.id/portalpwk/"; ?>

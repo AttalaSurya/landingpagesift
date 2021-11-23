@@ -1,5 +1,6 @@
 <?php
     include "sistemOBE.db";
+    include "sistemPortal.db";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +16,7 @@
         <link href="css/styles.css" rel="stylesheet">
         <link href="css/ldsift.css" rel="stylesheet">
         <link href="css/ani.css" rel="stylesheet">
-      </head>
+    </head>
         <body id="page-top">
             <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
                 <div class="d-flex bd-highlight">
@@ -116,7 +117,7 @@
                                     <div class="row justify-content-center">
                                         <div class="col-xl-4 col-lg-6 mb-4">
                                             <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
-                                            <a href=<?php echo $obesipil ?>><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                            <a href=<?php echo $portalarsitektur ?>><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                                     <div class="portfolio-item-caption-content text-center text-dark">
                                                         <h4>Arsitek</h4>
                                                     </div>
@@ -126,7 +127,7 @@
                                     </div>
                                 <div class="col-xl-4 col-lg-6 mb-4">
                                     <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
-                                    <a href=<?php echo $obeelektro ?>><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <a href=<?php echo $portalelektro ?>><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                                     <div class="portfolio-item-caption-content text-center text-dark">
                                                         <h4>Teknik Elektro</h4>
                                                     </div>
@@ -136,7 +137,7 @@
                                     </div>
                                         <div class="col-xl-4 col-lg-6 mb-4">
                                             <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
-                                            <a href=<?php echo $obemesin ?>><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                            <a href=<?php echo $portalmesin ?>><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                                     <div class="portfolio-item-caption-content text-center text-dark">
                                                         <h4>Teknik Mesin</h4>
                                                     </div>
@@ -146,7 +147,7 @@
                                     </div>
                                         <div class="col-xl-4 col-lg-6 mb-4">
                                             <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
-                                            <a href=<?php echo $obeindustri ?>><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                            <a href=<?php echo $portalpwk ?>><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                                     <div class="portfolio-item-caption-content text-center text-dark">
                                                         <h4>PWK</h4>
                                                     </div>
@@ -160,17 +161,13 @@
                     </section>
         <section class="page-section" id="BEMS">
             <div class="container">
-                <!-- Contact Section Heading-->
                 <div class="text-center">
                     <h2 class="page-section-heading text-secondary d-inline-block mb-0">BEMS</h2>
                 </div>
-                <!-- Icon Divider-->
                 <div class="divider-custom"></div>
-                <!-- Contact Section Content-->
                 <div class="container py-5">
                     <div class="text-center">
                         <div class="row justify-content-center">
-                            <!-- Portfolio Items-->
                             <div class="col-md-6 col-lg-4 mb-5">
                                 <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
                                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -212,18 +209,12 @@
               </div>
             </div>
           </footer>
-        
-        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
         <div class="scroll-to-top d-lg-none position-fixed"><a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
-        <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
         <script src="assets/mail/jqBootstrapValidation.js"></script>
         <script src="assets/mail/contact_me.js"></script>
-        <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
 </html>
