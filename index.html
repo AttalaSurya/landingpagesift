@@ -1,34 +1,37 @@
 <?php
-    include "sistemOBE.db";
-    include "sistemPortal.db";
+    include "assets/sistemOBE.db";
+    include "assets/sistemPortal.db";
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">      
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Landing Page Sistem Informasi Fakultas Teknik Universitas Sebelas Maret">
         <meta name="author" content="Attala Surya Prima Amanda">
+        <meta name="description" content="Landing Page Sistem Informasi Fakultas Teknik Universitas Sebelas Maret">
+        <meta charset="utf-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Sistem Informasi Fakultas Teknik</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/heading.css">
-        <link rel="stylesheet" href="css/body.css">
-        <link href="css/styles.css" rel="stylesheet">
-        <link href="css/ldsift.css" rel="stylesheet">
-        <link href="css/ani.css" rel="stylesheet">
-        <link href="css/media.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/heading.css">
+        <link rel="stylesheet" href="assets/css/body.css">
+        <link href="assets/css/styles.css" rel="stylesheet">
+        <link href="assets/css/ldsift.css" rel="stylesheet">
+        <link href="assets/css/ani.css" rel="stylesheet">
+        <link href="assets/css/media.css" rel="stylesheet">
     </head>
         <body id="page-top">
             <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
                 <div class="d-flex bd-highlight">
-                    <div class="me-auto p-2 bd-highlight"><img src="navbar.png" width="128" height="45"></div>
+                    <div class="me-auto p-2 bd-highlight"><img src="assets/navbar.png" width="128" height="45"></div>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-5">
-                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-1 px-2 px-lg-1 rounded js-scroll-trigger" href="#sistemOBE">Sistem OBE</a>
+                            <li class="nav-item mx-0 mx-lg-1">
+                                <a class="nav-link py-1 px-2 px-lg-1 rounded" href="#sistemOBE">Sistem OBE</a>
                             </li>
-                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-1 px-2 px-lg-1 rounded js-scroll-trigger" href="#sistemPortal">Sistem Portal</a>
+                            <li class="nav-item mx-0 mx-lg-1">
+                                <a class="nav-link py-1 px-2 px-lg-1 rounded" href="#sistemPortal">Sistem KP TA</a>
                             </li>
-                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-1 px-2 px-lg-1 rounded js-scroll-trigger" href="#BEMS">BEMS</a>
+                            <li class="nav-item mx-0 mx-lg-1">
+                                <a class="nav-link py-1 px-2 px-lg-1 rounded" href="#KumpulanSistemInformasi">Sistem Informasi</a>
                             </li>
                         </ul>
                     </div>
@@ -41,6 +44,7 @@
                                 <div class="text-center text-light fade-in">
                                     <h1>Sistem Informasi Fakultas Teknik</h1>
                                     <h2>Universitas Sebelas Maret</h2>
+                                    <div class="subju"><p style="margin-top: 20px;"><i>Sistem Informasi merupakan website yang dikembangkan oleh Tim Laboratorium Komputer dan Jaringan Teknik Elektro UNS. Pembuatan website ini memiliki tujuan untuk menyatukan beberapa website yang berkaitan dengan Fakultas Teknik agar pengunjung dapat dengan mudah melaksanakan kegiatan yang berkaitan dengan website ft.uns.ac.id</i></p></div>
                                 </div>
                             </div>
                         </div>
@@ -53,55 +57,84 @@
                             <div class="container py-5">
                                 <div class="text-center">
                                     <div class="row justify-content-center">
-                                        <div class="col-xl-4 col-lg-6 mb-4">
-                                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
-                                            <a href=<?php echo $obesipil ?>><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                                    <div class="portfolio-item-caption-content text-center text-dark">
-                                                        <h4>Teknik Sipil</h4>
-                                                    </div>
-                                                </div></a>
-                                            <img class="img-fluid" src="assets/img/sistemOBE/T_Sipil.png" width="200" height="200" alt="Teknik Sipil">
-                                        </div>
-                                    </div>
-                                <div class="col-xl-4 col-lg-6 mb-4">
+                                    <div class="col-xl-4 col-lg-6 mb-4">
                                     <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
-                                    <a href=<?php echo $obeelektro ?>><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                                    <div class="portfolio-item-caption-content text-center text-dark">
-                                                        <h4>Teknik Elektro</h4>
-                                                    </div>
-                                                </div></a>
-                                    <img class="img-fluid" src="assets/img/sistemOBE/T_Elektro.png" width="200" height="200" alt="Teknik Sipil"/>
-                                </div>
+                                    <div class="card">
+                                    <div class="text-center">
+                                    <a style="color:black" href=<?php echo $obesipil ?>>
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <h5>Teknik Sipil</h5>
                                     </div>
-                                        <div class="col-xl-4 col-lg-6 mb-4">
-                                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
-                                            <a href=<?php echo $obemesin ?>><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                                    <div class="portfolio-item-caption-content text-center text-dark">
-                                                        <h4>Teknik Mesin</h4>
-                                                    </div>
-                                                </div></a>
-                                            <img class="img-fluid" src="assets/img/sistemOBE/T_Mesin.png" width="200" height="200" alt="Teknik Sipil"/>
-                                        </div>
+                                        <img class="img-fluid" src="assets/img/sistemOBE/T_Sipil.png" width="200" height="200" alt="Teknik Sipil"></div>
+                                        <div class="card-body">
+                                        <h5 class="card-title">Teknik Sipil</h5></a>
                                     </div>
-                                <div class="col-xl-4 col-lg-6 mb-4">
+                                    </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-6 mb-4">
                                     <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
-                                    <a href=<?php echo $obekimia ?>><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                                    <div class="portfolio-item-caption-content text-center text-dark">
-                                                        <h4>Teknik Kimia</h4>
-                                                    </div>
-                                                </div></a>
-                                    <img class="img-fluid" src="assets/img/sistemOBE/T_Kimia.png" width="200" height="200" alt="Teknik Sipil"/>
-                                </div>
+                                    <div class="card">  
+                                    <div class="text-center">
+                                    <a style="color:black" href=<?php echo $obeelektro ?>>
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <h5>Teknik Elektro</h5>
                                     </div>
-                                        <div class="col-xl-4 col-lg-6 mb-4">
-                                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
-                                            <a href=<?php echo $obeindustri ?>><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                                    <div class="portfolio-item-caption-content text-center text-dark">
-                                                        <h4>Teknik Industri</h4>
-                                                    </div>
-                                                </div></a>
-                                            <img class="img-fluid" src="assets/img/sistemOBE/T_Industri.png" width="200" height="200" alt="Teknik Sipil"/>
-                                        </div>
+                                        <img class="img-fluid" src="assets/img/sistemOBE/T_Elektro.png" width="200" height="200" alt="Teknik Elektro"></div>
+                                        <div class="card-body">
+                                        <h5 class="card-title">Teknik Elektro</h5></a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-6 mb-4">
+                                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
+                                    <div class="card">
+                                    <div class="text-center">
+                                    <a style="color:black" href=<?php echo $obemesin ?>>
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <h5>Teknik Mesin</h5>
+                                    </div>
+                                        <img class="img-fluid" src="assets/img/sistemOBE/T_Mesin.png" width="200" height="200" alt="Teknik Sipil"/></div>
+                                        <div class="card-body">
+                                        <h5 class="card-title">Teknik Mesin</h5></a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-6 mb-4">
+                                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
+                                    <div class="card">
+                                    <div class="text-center">
+                                    <a style="color:black" href=<?php echo $obekimia ?>>
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <h5>Teknik Kimia</h5>
+                                    </div>
+                                        <img class="img-fluid" src="assets/img/sistemOBE/T_Kimia.png" width="200" height="200" alt="Teknik Sipil"/></div>
+                                        <div class="card-body">
+                                        <h5 class="card-title">Teknik Kimia</h5></a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-6 mb-4">
+                                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
+                                    <div class="card">
+                                    <div class="text-center">
+                                    <a style="color:black" href=<?php echo $obeindustri ?>>
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <h5>Teknik Industri</h5>
+                                    </div>
+                                        <img class="img-fluid" src="assets/img/sistemOBE/T_Industri.png" width="200" height="200" alt="Teknik Sipil"/></div>
+                                        <div class="card-body">
+                                        <h5 class="card-title">Teknik Industri</h5></a>
+                                    </div>
+                                    </div>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -110,83 +143,147 @@
                     <section class="page-section portfolio" id="sistemPortal">
                         <div class="container">
                             <div class="text-center">
-                                <h2 class="page-section-heading text-secondary mb-0 d-inline-block">Sistem Portal</h2>
-                                <div class="divider-custom"></div>
+                                <h2 class="page-section-heading text-secondary mb-0 d-inline-block">Sistem KP - TA</h2>
                             </div>
                             <div class="container py-5">
-                                <div class="text-center">
+                            <div class="text-center">
                                     <div class="row justify-content-center">
-                                        <div class="col-xl-4 col-lg-6 mb-4">
-                                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
-                                            <a href=<?php echo $portalarsitektur ?>><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                                    <div class="portfolio-item-caption-content text-center text-dark">
-                                                        <h4>Arsitek</h4>
-                                                    </div>
-                                                </div></a>
-                                            <img class="img-fluid" src="assets/img/sistemPortal/Arsitek.png" width="200" height="200" alt="Teknik Sipil">
-                                        </div>
-                                    </div>
-                                <div class="col-xl-4 col-lg-6 mb-4">
+                                    <div class="col-xl-4 col-lg-6 mb-4">
                                     <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
-                                    <a href=<?php echo $portalelektro ?>><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                                    <div class="portfolio-item-caption-content text-center text-dark">
-                                                        <h4>Teknik Elektro</h4>
-                                                    </div>
-                                                </div></a>
-                                    <img class="img-fluid" src="assets/img/sistemPortal/T_Elektro.png" width="150" height="150" alt="Teknik Sipil"/>
-                                </div>
+                                    <div class="card">  
+                                    <div class="text-center">
+                                    <a style="color:black" href=<?php echo $portalelektro ?>>
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <h5>Teknik Elektro</h5>
                                     </div>
-                                        <div class="col-xl-4 col-lg-6 mb-4">
-                                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
-                                            <a href=<?php echo $portalmesin ?>><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                                    <div class="portfolio-item-caption-content text-center text-dark">
-                                                        <h4>Teknik Mesin</h4>
-                                                    </div>
-                                                </div></a>
-                                            <img class="img-fluid" src="assets/img/sistemPortal/T_Mesin.png" width="200" height="200" alt="Teknik Sipil"/>
-                                        </div>
+                                        <img class="img-fluid" src="assets/img/sistemPortal/T_Elektro.png" width="200" height="200" alt="Teknik Elektro"></div>
+                                        <div class="card-body">
+                                        <h5 class="card-title">Teknik Elektro</h5></a>
                                     </div>
-                                        <div class="col-xl-4 col-lg-6 mb-4">
-                                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
-                                            <a href=<?php echo $portalpwk ?>><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                                    <div class="portfolio-item-caption-content text-center text-dark">
-                                                        <h4>PWK</h4>
-                                                    </div>
-                                                </div></a>
-                                            <img class="img-fluid" src="assets/img/sistemPortal/PWK.png" width="200" height="200" alt="Teknik Sipil"/>
-                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="col-xl-4 col-lg-6 mb-4">
+                                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
+                                    <div class="card">
+                                    <div class="text-center">
+                                    <a style="color:black" href=<?php echo $portalmesin ?>>
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <h5>Teknik Mesin</h5>
+                                    </div>
+                                        <img class="img-fluid" src="assets/img/sistemPortal/T_Mesin.png" width="200" height="200" alt="Teknik Sipil"/></div>
+                                        <div class="card-body">
+                                        <h5 class="card-title">Teknik Mesin</h5></a>
+                                    </div>
+                                    </div>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-        <section class="page-section" id="BEMS">
+        <section class="page-section" id="KumpulanSistemInformasi">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="page-section-heading text-secondary d-inline-block mb-0">BEMS</h2>
+                    <h2 class="page-section-heading text-secondary d-inline-block mb-0">Kumpulan Sistem Informasi Yang Lain</h2>
                 </div>
-                <div class="divider-custom"></div>
                 <div class="container py-5">
-                    <div class="text-center">
-                        <div class="row justify-content-center">
-                            <div class="col-md-6 col-lg-4 mb-5">
-                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
-                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                        <div class="portfolio-item-caption-content text-center text-black"><h4>Build Energy Management System</h4></div>
-                                    </div><img class="img-fluid" src="assets/img/Portfolio/T_Elektro.png" width="200" height="200" alt="Build Energy Management System"/>
+                <div class="text-center">
+                                    <!-- BEMS -->
+                                    <div class="row justify-content-center">
+                                    <div class="col-xl-4 col-lg-6 mb-4">
+                                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
+                                    <div class="card">
+                                    <div class="text-center">
+                                    <a style="color:black" href=https://si.ft.uns.ac.id/lobems><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"></div>
+                                    </div>
+                                        <div class="card-body">
+                                        <h5 class="card-text">BEMS</h5></a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    
+                                    <!-- UNS Care -->
+                                    <div class="col-xl-4 col-lg-6 mb-4">
+                                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
+                                    <div class="card">
+                                    <div class="text-center">
+                                    <a style="color:black" href=https://si.ft.uns.ac.id/unscare><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"></div>
+                                    </div>
+                                        <div class="card-body">
+                                        <h5 class="card-text">UNS Care</h5></a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+
+                                    <!-- BESS -->
+                                    <div class="col-xl-4 col-lg-6 mb-4">
+                                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
+                                    <div class="card">
+                                    <div class="text-center">
+                                    <a style="color:black" href=https://si.ft.uns.ac.id/prnbess><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"></div>
+                                        </div>
+                                        <div class="card-body">
+                                        <h5 class="card-text">BESS</h5></a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+
+                                    <!-- Powerwall -->
+                                    <div class="col-xl-4 col-lg-6 mb-4">
+                                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
+                                    <div class="card">
+                                    <div class="text-center">
+                                    <a style="color:black" href=https://si.ft.uns.ac.id/smartpowerwall><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"></div>
+                                        </div>
+                                        <div class="card-body">
+                                        <h5 class="card-text">Smart Powerwall</h5></a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+
+                                    <!-- RPL Rekognisi Pembelajaran Lampau -->
+                                    <div class="col-xl-4 col-lg-6 mb-4">
+                                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
+                                    <div class="card">
+                                    <div class="text-center">
+                                    <a style="color:black" href=https://si.ft.uns.ac.id/rpl><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"></div>
+                                        </div>
+                                        <div class="card-body">
+                                        <h5 class="card-text">RPL</h5></a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+
+                                    <!-- Perizinan -->
+                                    <div class="col-xl-4 col-lg-6 mb-4">
+                                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
+                                    <div class="card">
+                                    <div class="text-center">
+                                    <a style="color:black" href=https://si.ft.uns.ac.id/perizinan><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"></div>
+                                        </div>
+                                        <div class="card-body">
+                                        <h5 class="card-text">Perizinan</h5></a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                     </section>
         <footer class="site-footer bg-dark"  style="min-height:20vh">
             <div class="container">
               <div class="row">
                 <div class="col-md-4 mt-4 mb-4">
                   <img src="https://spada.uns.ac.id/pluginfile.php/2/course/section/1/uns.png" style="width: 40%;" alt="">
-                  <h3 class="footer-heading text-light">Fakultas Teknik UNS</h3>
+                  <h3 class="footer-heading text-light" style="margin-top: 10px;">Fakultas Teknik UNS</h3>
                   <p class="text-light">Jl. Ir. Sutami No.36 A Surakarta 57126 <br>
                     Telp (+62)77358350233 <br>
                     Fax (+62)77358350233 <br>
@@ -206,16 +303,14 @@
                     <h3 class="footer-heading text-light">Maps</h3>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.120699070088!2d110.85154081477673!3d-7.5618169945466365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a16fdf072a90f%3A0xea50b255b0e6ce3e!2sFakultas%20Teknik%20Uns!5e0!3m2!1sen!2sid!4v1619534477026!5m2!1sen!2sid" style="max-width:300; max-height:200" allowfullscreen="" loading="lazy"></iframe>
                   </div>
+                  <p style="color: white;"> Dikembangkan oleh Tim Lab Komputer dan Jaringan</p>
                 </div>
               </div>
             </div>
           </footer>
-        <div class="scroll-to-top d-lg-none position-fixed"><a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
-        <script src="js/scripts.js"></script>
+        <script src="assets/js/scripts.js"></script>
     </body>
 </html>
